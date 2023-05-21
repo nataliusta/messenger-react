@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Header from './components/Header/Header';
+import UsersList from './components/UsersList/UsersList';
+import MessagesList from './components/MessagesList/MessagesList';
+import SendMessageForm from './components/SendMessageForm/SendMessageForm';
 import './App.css';
 
 const App = () => {
@@ -14,43 +18,4 @@ const App = () => {
   );
 }
 
-const Header = () => {
-  return (
-    <div className="Header">
-      WhatsApp logo
-    </div>
-  );
-}
-
-const UsersList = () => {
-  return (
-    <div className="UsersList">
-      <ul>
-        <li>User 1</li>
-        <li>User 2</li>
-        <li>User 3</li>
-      </ul>
-    </div>
-  );
-} 
-
-const MessagesList = () => {
-  return (
-    <div className="MessagesList">
-      <ul>
-        <li>Message 1</li>
-        <li>Message 2</li>
-        <li>Message 3</li>
-      </ul>
-    </div>
-  );
-}
-
-const SendMessageForm = () => {
-  return (
-    <div className="SendMessageForm">
-      <button type="button">Send</button>
-    </div>
-  );
-}
 export default App;
