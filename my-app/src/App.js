@@ -1,25 +1,56 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        <li><Header /></li>
+        <li><UsersList /></li>
+        <li><MessagesList /></li>
+        <li><SendMessageForm /></li>
+      </ul>
     </div>
   );
 }
 
+const Header = () => {
+  return (
+    <div className="Header">
+      WhatsApp logo
+    </div>
+  );
+}
+
+const UsersList = () => {
+  return (
+    <div className="UsersList">
+      <ul>
+        <li>User 1</li>
+        <li>User 2</li>
+        <li>User 3</li>
+      </ul>
+    </div>
+  );
+} 
+
+const MessagesList = () => {
+  return (
+    <div className="MessagesList">
+      <ul>
+        <li>Message 1</li>
+        <li>Message 2</li>
+        <li>Message 3</li>
+      </ul>
+    </div>
+  );
+}
+
+const SendMessageForm = () => {
+  return (
+    <div className="SendMessageForm">
+      <button type="button">Send</button>
+    </div>
+  );
+}
 export default App;
