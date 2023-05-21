@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+import classes from './MessagesList.module.css';
 
 const MessagesList = () => {
     return (
-      <div className="MessagesList">
+      <div className={classes.messages}>
         <ul>
           <li>Message 1</li>
           <li>Message 2</li>

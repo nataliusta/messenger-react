@@ -1,3 +1,12 @@
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 120px 1fr 80px;
+  margin: 0 auto;
+  width: 1220px;
+  height: 100vh;
+}
+
 ul li {
   list-style-type: none;
 }

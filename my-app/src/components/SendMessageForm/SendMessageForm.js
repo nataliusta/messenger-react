@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+import classes from './SendMessageForm.module.css';
 
 const SendMessageForm = () => {
     return (
-      <div className="SendMessageForm">
+      <div className={classes.SendMessage}>
         <button type="button">Send</button>
       </div>
     );

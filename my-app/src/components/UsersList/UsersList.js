@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import classes from './UsersList.module.css';
+
 
 const UsersList = () => {
     return (
-      <div className="UsersList">
+      <div className={classes.users}>
         <ul>
           <li>User 1</li>
           <li>User 2</li>

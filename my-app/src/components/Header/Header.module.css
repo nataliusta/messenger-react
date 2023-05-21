@@ -1,0 +1,16 @@
+.header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 30px;
+    background-color: #035A52;
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
