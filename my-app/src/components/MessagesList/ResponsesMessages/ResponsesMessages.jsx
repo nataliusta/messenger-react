@@ -1,14 +1,11 @@
 import React from 'react';
 import classes from './ResponsesMessages.module.css';
+import ResponsesItem from './ResponsesItem/ResponsesItem';
 
 const ResponsesMessages = () => {
     return (
         <div className={classes.responsesMessages}>
-          <ul className={classes.responsesList}>
-              <li className={classes.responsesItem}>Hey!!</li>
-              <li className={classes.responsesItem}>??</li>
-              <li className={classes.responsesItem}>Where are you?</li>
-          </ul>
+            <ResponsesItem />
         </div>
     );
 }
