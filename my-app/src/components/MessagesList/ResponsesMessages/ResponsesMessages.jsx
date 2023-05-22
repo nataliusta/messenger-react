@@ -6,6 +6,8 @@ const ResponsesMessages = () => {
     return (
         <div className={classes.responsesMessages}>
             <ResponsesItem />
+            <ResponsesItem />
+            <ResponsesItem />
         </div>
     );
 }
