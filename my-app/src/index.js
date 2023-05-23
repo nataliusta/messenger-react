@@ -4,12 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let responsesData = [
+  {id: 1, message: "Hey,I'm good and you?"},
+  {id: 2, message: "Any plans for weekend?"},
+  {id: 3, message: ":)"}
+]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    <App />
+    <App responsesData={responsesData} />
   </React.StrictMode>
 );
+
+/*ReactDOM.render(<App responsesData={responsesData} />, document.getElementById('root'));*/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

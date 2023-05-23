@@ -5,12 +5,13 @@ import MessagesList from './components/MessagesList/MessagesList';
 import SendMessageForm from './components/SendMessageForm/SendMessageForm';
 import './App.css';
 
-const App = () => {
+const App = (props) => {
+
   return (
     <div className="app-wrapper">
         <Header />
         <UsersList />
-        <MessagesList />
+        <MessagesList responsesData={props.responsesData} />
         <SendMessageForm />
     </div>
   );

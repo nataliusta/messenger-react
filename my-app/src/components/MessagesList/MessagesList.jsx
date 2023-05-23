@@ -4,11 +4,12 @@ import Messages from './Messages/Messages';
 import ResponsesMessages from './ResponsesMessages/ResponsesMessages';
 import DefaultMessage from './DefaultMessage/DefaultMessage';
 
-const MessagesList = () => {
+const MessagesList = (props) => {
+
     return (
       <div className={classes.messagesContainer}>
         <DefaultMessage />
-        <ResponsesMessages />
+        <ResponsesMessages responsesData={props.responsesData}/>
         <Messages />
       </div>
     );

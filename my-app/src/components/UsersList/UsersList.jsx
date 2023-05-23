@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './UsersList.module.css';
 import UsersItem from './UsersItem/UsersItem';
 
-const UsersList = () => {
+const UsersList = (props) => {
 
   let usersData = [
     {id: 1, name: "User 1"},
