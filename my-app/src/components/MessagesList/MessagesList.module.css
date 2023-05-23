@@ -7,21 +7,3 @@
     padding: 20px;
     background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
 }
-
-.defaultBlock {
-    grid-column: 1/-1;
-    grid-row: 1/2;
-    padding: 20px;
-    justify-self: center;
-    margin-bottom: 3px;
-    height: auto;
-}
-
-.defaultMessage {
-    padding: 10px 50px;
-    color: #646C61;
-    background-color: #FDEFCC;
-    border: 1px solid #E4E1D8;
-    border-radius: 15px;
-    text-align: center;
-}

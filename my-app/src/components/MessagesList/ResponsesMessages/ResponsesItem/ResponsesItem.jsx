@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './ResponsesItem.module.css';
 
-const ResponsesItem = () => {
+const ResponsesItem = (props) => {
     return (
         <div className={classes.responsesBlock}>
-            <div className={classes.responsesItem}>Where are you?</div>
+            <div className={classes.responsesItem}>{props.message}</div>
         </div>
 
     );

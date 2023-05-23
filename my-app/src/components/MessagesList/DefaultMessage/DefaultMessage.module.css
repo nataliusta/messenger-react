@@ -1,0 +1,17 @@
+.defaultBlock {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 20px;
+    justify-self: center;
+    margin-bottom: 3px;
+    height: auto;
+}
+
+.defaultMessage {
+    padding: 10px 50px;
+    color: #646C61;
+    background-color: #FDEFCC;
+    border: 1px solid #E4E1D8;
+    border-radius: 15px;
+    text-align: center;
+}

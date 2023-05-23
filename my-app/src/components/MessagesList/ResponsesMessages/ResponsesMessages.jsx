@@ -5,9 +5,9 @@ import ResponsesItem from './ResponsesItem/ResponsesItem';
 const ResponsesMessages = (props) => {
     return (
         <div className={classes.responsesMessages}>
-            <ResponsesItem />
-            <ResponsesItem />
-            <ResponsesItem />
+            <ResponsesItem message="Hey,I'm good and you?" />
+            <ResponsesItem message="Any plans for weekend?"/>
+            <ResponsesItem message=":)"/>
         </div>
     );
 }
