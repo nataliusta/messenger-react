@@ -1,3 +1,30 @@
 .messages {
     margin-left: auto;
 }
+
+.SendMessage {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 5px;
+}
+
+textarea {
+    width: 400px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #E3E3E3;
+    border-radius: 20px;
+    resize: none;
+    overflow: auto;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    background: #09827B;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
