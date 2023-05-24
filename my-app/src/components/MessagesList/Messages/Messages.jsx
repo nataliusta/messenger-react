@@ -4,13 +4,7 @@ import MessagesItem from './MessagesItem/MessagesItem';
 
 const Messages = (props) => {
 
-  let messagesData = [
-    {id: 1, message: "Hi,how are you?"},
-    {id: 2, message: "How are you doing?"},
-    {id: 3, message: "???"}
-  ]
-
-  let messagesElements = messagesData.map( message => <MessagesItem id={message.id}  message={message.message} /> );
+  let messagesElements = props.messagesData.map( message => <MessagesItem id={message.id}  message={message.message} /> );
 
     return (
       <div className={classes.messages}>

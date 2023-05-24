@@ -10,7 +10,7 @@ const MessagesList = (props) => {
       <div className={classes.messagesContainer}>
         <DefaultMessage />
         <ResponsesMessages responsesData={props.responsesData}/>
-        <Messages />
+        <Messages messagesData={props.messagesData} />
       </div>
     );
   }

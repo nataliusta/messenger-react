@@ -10,8 +10,8 @@ const App = (props) => {
   return (
     <div className="app-wrapper">
         <Header />
-        <UsersList />
-        <MessagesList responsesData={props.responsesData} />
+        <UsersList usersData={props.usersData} />
+        <MessagesList responsesData={props.responsesData} messagesData={props.messagesData} />
         <SendMessageForm />
     </div>
   );
