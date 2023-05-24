@@ -1,4 +1,4 @@
-import { rerenderEntireTree } from "..";
+import { rerenderEntireTree } from "../render";
 
 let state = {
     messagesList: {
@@ -23,13 +23,13 @@ let state = {
 };
 
 export let addNewMessage = (postMessage) => {
-    debugger;
 
     let newMessage = {
         id: 4,
         message: postMessage
     };
     state.messagesList.messagesData.push(newMessage);
+    rerenderEntireTree(state);
 }
 
 export default state;
