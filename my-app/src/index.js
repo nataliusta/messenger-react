@@ -4,24 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-let responsesData = [
-  {id: 1, message: "Hey,I'm good and you?"},
-  {id: 2, message: "Any plans for weekend?"},
-  {id: 3, message: ":)"}
-];
-
-let messagesData = [
-  {id: 1, message: "Hi,how are you?"},
-  {id: 2, message: "How are you doing?"},
-  {id: 3, message: "???"}
-];
-
-let usersData = [
-  {id: 1, name: "User 1"},
-  {id: 2, name: "User 2"},
-  {id: 3, name: "User 3"},
-];
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
