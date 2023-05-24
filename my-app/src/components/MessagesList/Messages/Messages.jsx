@@ -9,10 +9,15 @@ const Messages = (props) => {
   let newMessageElement = React.createRef();
 
   let addMessage = () => {
-  
     let text = newMessageElement.current.value;
     props.addNewMessage(text);
+    newMessageElement.current.value = '';
   };
+
+  let onMessageChange = () => {
+    let text = newMessageElement.current.value;
+    console.log(text);
+  }
 
     return (
       <div>
@@ -20,10 +25,11 @@ const Messages = (props) => {
           { messagesElements }
         </div>
         <div className={classes.SendMessage}>
-          <textarea ref={newMessageElement}></textarea>
+          <textarea onChange={onMessageChange} ref={newMessageElement} 
+                    value={props.newMessageText} />
           <button type="button" onClick={ addMessage }>Send</button>
+        </div>
       </div>
-    </div>
     );
 }
 

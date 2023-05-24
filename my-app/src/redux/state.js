@@ -12,6 +12,7 @@ let state = {
             {id: 2, message: "How are you doing?"},
             {id: 3, message: "???"}
         ],
+        newMessageText: "Wooow"
     },
     usersList: {
         usersData: [

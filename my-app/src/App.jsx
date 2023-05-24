@@ -10,7 +10,10 @@ const App = (props) => {
     <div className="app-wrapper">
         <Header />
         <UsersList usersData={props.state.usersList.usersData} />
-        <MessagesList responsesData={props.state.messagesList.responsesData} messagesData={props.state.messagesList.messagesData} addNewMessage={props.addNewMessage} />
+        <MessagesList responsesData={props.state.messagesList.responsesData} 
+                      messagesData={props.state.messagesList.messagesData} 
+                      addNewMessage={props.addNewMessage} 
+                      newMessageText={props.newMessageText} />
     </div>
   );
 }
