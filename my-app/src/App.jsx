@@ -13,7 +13,8 @@ const App = (props) => {
         <MessagesList responsesData={props.state.messagesList.responsesData} 
                       messagesData={props.state.messagesList.messagesData} 
                       addNewMessage={props.addNewMessage} 
-                      newMessageText={props.newMessageText} />
+                      newMessageText={props.state.messagesList.newMessageText} 
+                      updateNewMessageText={props.updateNewMessageText} />
     </div>
   );
 }
