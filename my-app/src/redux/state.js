@@ -1,4 +1,6 @@
-import { rerenderEntireTree } from '../index';
+let rerenderEntireTree = () => {
+    console.log('state changed');
+}
 
 let state = {
     messagesList: {
@@ -23,7 +25,7 @@ let state = {
     }
 };
 
-export let addNewMessage = () => {
+export const addNewMessage = () => {
     let newMessage = {
         id: 4,
         message: state.messagesList.newMessageText
@@ -33,9 +35,13 @@ export let addNewMessage = () => {
     rerenderEntireTree(state);
 };
 
-export let updateNewMessageText = (newText) => {
+export const updateNewMessageText = (newText) => {
     state.messagesList.newMessageText = newText;
     rerenderEntireTree(state);
+};
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 };
 
 export default state;

@@ -5,11 +5,11 @@ import state from './redux/state';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { addNewMessage, updateNewMessageText } from './redux/state';
+import { addNewMessage, updateNewMessageText, subscribe } from './redux/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export let rerenderEntireTree = (state) => {
+let rerenderEntireTree = (state) => {
 
   root.render(
     <React.StrictMode>
@@ -19,6 +19,8 @@ export let rerenderEntireTree = (state) => {
 };
 
 rerenderEntireTree(state);
+
+subscribe(rerenderEntireTree);
 
 /*ReactDOM.render(<App responsesData={responsesData} />, document.getElementById('root'));*/
 
