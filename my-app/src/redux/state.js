@@ -1,3 +1,6 @@
+const ADD_NEW_MESSAGE = 'ADD-NEW-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+
 let store = {
     _state: {
         messagesList: {
@@ -11,7 +14,7 @@ let store = {
                 {id: 2, message: "How are you doing?"},
                 {id: 3, message: "???"}
             ],
-            newMessageText: "Wooow"
+            newMessageText: ''
         },
         usersList: {
             usersData: [
@@ -31,7 +34,7 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) { // {type: 'ADD-NEW-MESSAGE'}
-        if(action.type === 'ADD-NEW-MESSAGE') {
+        if(action.type === ADD_NEW_MESSAGE) {
             let newMessage = {
                 id: 4,
                 message: this._state.messagesList.newMessageText
@@ -39,12 +42,17 @@ let store = {
             this._state.messagesList.messagesData.push(newMessage);
             this._state.messagesList.newMessageText = '';
             this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+        } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
             this._state.messagesList.newMessageText = action.newText;
             this._callSubscriber(this._state);
         }
     }
 };
+
+export let addMessageCreator = () => ({ type: ADD_NEW_MESSAGE});
+  
+export let updateNewMessageTaxtCreator = (text) => 
+({ type: UPDATE_NEW_MESSAGE_TEXT, newText: text });
 
 window.store = store;
 export default store;
