@@ -17,7 +17,7 @@ let initialState = {
 
 const messagesReducer = (state = initialState, action) => {
     
-    if(action.type === ADD_NEW_MESSAGE) {
+    if (action.type === ADD_NEW_MESSAGE) {
         let newMessage = {
             id: 4,
             message: state.newMessageText
