@@ -5,7 +5,7 @@ import MessagesList from './components/MessagesList/MessagesList';
 import './App.css';
 
 const App = (props) => {
-
+ 
   return (
     <div className="app-wrapper">
         <Header />

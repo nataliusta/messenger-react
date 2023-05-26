@@ -1,4 +1,5 @@
 import messagesReducer from "./messages-reducer";
+import usersReducer from "./users-reducer";
 
 let store = {
     _state: {
@@ -32,8 +33,9 @@ let store = {
     subscribe(observer) {
         this._callSubscriber = observer;
     },
-    dispatch(action) { // {type: 'ADD-NEW-MESSAGE'}
+    dispatch(action) { 
         this._state.messagesList =  messagesReducer(this._state.messagesList, action);
+        this._state.usersList =  usersReducer(this._state.usersList, action);
         this._callSubscriber(this._state);
     }
 };
