@@ -11,9 +11,9 @@ const App = (props) => {
         <Header />
         <UsersList usersData={props.state.usersList.usersData} />
         <MessagesList responsesData={props.state.messagesList.responsesData} 
-                      messagesData={props.state.messagesList.messagesData} 
-                      dispatch={props.dispatch} 
-                      newMessageText={props.state.messagesList.newMessageText} />
+                      newMessageText={props.state.messagesList.newMessageText}
+                      dispatch={props.dispatch}
+                      store={props.store} />
     </div>
   );
 }

@@ -51,7 +51,7 @@ let store = {
 
 export let addMessageCreator = () => ({ type: ADD_NEW_MESSAGE});
   
-export let updateNewMessageTaxtCreator = (text) => 
+export let updateNewMessageTextCreator = (text) => 
 ({ type: UPDATE_NEW_MESSAGE_TEXT, newText: text });
 
 window.store = store;
