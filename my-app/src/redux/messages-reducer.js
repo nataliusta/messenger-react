@@ -5,15 +5,20 @@ const messagesReducer = (state, action) => {
     if(action.type === ADD_NEW_MESSAGE) {
         let newMessage = {
             id: 4,
-            message: this._state.messagesList.newMessageText
+            message: state.newMessageText
         };
-        state.messagesList.messagesData.push(newMessage);
-        state.messagesList.newMessageText = '';
+        state.messagesData.push(newMessage);
+        state.newMessageText = '';
         
     } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-        state.messagesList.newMessageText = action.newText;
+        state.newMessageText = action.newText;
     }
     return state;
-}
+};
+
+export let addMessageCreator = () => ({ type: ADD_NEW_MESSAGE});
+  
+export let updateNewMessageTextCreator = (text) => 
+({ type: UPDATE_NEW_MESSAGE_TEXT, newText: text });
 
 export default messagesReducer;

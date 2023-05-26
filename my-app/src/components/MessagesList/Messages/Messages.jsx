@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Messages.module.css';
 import MessagesItem from './MessagesItem/MessagesItem';
-import { addMessageCreator, updateNewMessageTextCreator } from '../../../redux/state';
+import { addMessageCreator, updateNewMessageTextCreator } from '../../../redux/messages-reducer';
 
 const Messages = (props) => {
 
