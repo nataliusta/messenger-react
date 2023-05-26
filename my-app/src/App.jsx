@@ -12,9 +12,8 @@ const App = (props) => {
         <UsersList usersData={props.state.usersList.usersData} />
         <MessagesList responsesData={props.state.messagesList.responsesData} 
                       messagesData={props.state.messagesList.messagesData} 
-                      addNewMessage={props.addNewMessage} 
-                      newMessageText={props.state.messagesList.newMessageText} 
-                      updateNewMessageText={props.updateNewMessageText} />
+                      dispatch={props.dispatch} 
+                      newMessageText={props.state.messagesList.newMessageText} />
     </div>
   );
 }

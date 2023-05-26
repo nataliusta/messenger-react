@@ -30,19 +30,6 @@ let store = {
     subscribe(observer) {
         this._callSubscriber = observer;
     },
-    addNewMessage() {
-        let newMessage = {
-            id: 4,
-            message: this._state.messagesList.newMessageText
-        };
-        this._state.messagesList.messagesData.push(newMessage);
-        this._state.messagesList.newMessageText = '';
-        this._callSubscriber(this._state);
-    },
-    updateNewMessageText(newText) {
-        this._state.messagesList.newMessageText = newText;
-        this._callSubscriber(this._state);
-    },
     dispatch(action) { // {type: 'ADD-NEW-MESSAGE'}
         if(action.type === 'ADD-NEW-MESSAGE') {
             let newMessage = {

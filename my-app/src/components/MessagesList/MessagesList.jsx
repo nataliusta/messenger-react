@@ -10,10 +10,9 @@ const MessagesList = (props) => {
       <div className={classes.messagesContainer}>
         <DefaultMessage />
         <ResponsesMessages responsesData={props.responsesData}/>
-        <Messages messagesData={props.messagesData} 
-                  addNewMessage={props.addNewMessage} 
+        <Messages messagesData={props.messagesData}  
                   newMessageText={props.newMessageText} 
-                  updateNewMessageText={props.updateNewMessageText} />
+                  dispatch={props.dispatch} />
       </div>
     );
   }
